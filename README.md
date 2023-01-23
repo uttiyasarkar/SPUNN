@@ -2,7 +2,20 @@
 
 Stock price prediction by using Recursive Neural Networks!
 
+## Dependencies
+yahoo_fin
+pandas
+numpy
+
 ## Installation
+```bash
+conda create --name spunn python=3.10
+pip install yahoo_fin
+```
+```bash
+conda install -c anaconda ipykernel
+python -m ipykernel install --user --name=spunn
+```
 
 ```bash
 $ pip install spunn
@@ -22,4 +35,3 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## Credits
 
-`spunn` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
