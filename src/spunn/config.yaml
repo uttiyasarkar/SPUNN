@@ -1,0 +1,9 @@
+start_date: "2005-01-01"
+interval: "1d"
+output_dir: "stock_data"
+stocks:
+  - SPY
+  - AAPL
+  - NVDA
+  - TSLA
+

@@ -1,37 +1,51 @@
-# spunn
+# My Python Project
 
-Stock price prediction by using Recursive Neural Networks!
+This project is designed for stock price prediction using machine learning techniques. It fetches stock data, preprocesses it, and utilizes a transformer model for predictions.
 
-## Dependencies
-yahoo_fin
-pandas
-numpy
+## Project Structure
+
+```
+my-python-project
+├── src
+│   ├── preprocess.py       # Contains DataPreprocessor class for data normalization and sequence creation
+│   ├── normalize.py        # Contains DataFetcher class for fetching stock data from Yahoo Finance
+│   ├── create_sequences.py  # Contains StockPredictor class for defining and training the prediction model
+│   └── main.py             # Main script to orchestrate the workflow
+├── requirements.txt        # Lists project dependencies
+└── README.md               # Project documentation
+```
 
 ## Installation
-```bash
-conda create --name spunn python=3.10
-pip install yahoo_fin
-```
-```bash
-conda install -c anaconda ipykernel
-python -m ipykernel install --user --name=spunn
-```
 
-```bash
-$ pip install spunn
-```
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd my-python-project
+   ```
+
+2. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
-- TODO
+1. Modify the parameters in `src/main.py` to specify the stock ticker and date range for prediction.
+2. Run the main script:
+   ```
+   python src/main.py
+   ```
 
-## Contributing
+## Dependencies
 
-Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+This project requires the following Python packages:
+- numpy
+- pandas
+- yfinance
+- torch
+- sklearn
+- matplotlib
 
 ## License
 
-`spunn` was created by Uttiya Sarkar. It is licensed under the terms of the MIT license.
-
-## Credits
-
+This project is licensed under the MIT License.
